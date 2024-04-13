@@ -1,0 +1,37 @@
+buildscript {
+    ext {
+        buildToolsVersion = "34.0.0"
+        minSdkVersion = 21
+        compileSdkVersion = 34
+        targetSdkVersion = 34
+        ndkVersion = "25.1.8937393"
+        kotlinVersion = "1.9.22"
+        
+    //     supportLibVersion = "28.0.0"         //ADD THIS
+    //    googlePlayServicesVersion = "11.8.0" //ADD THIS
+    //    androidMapsUtilsVersion = "0.5+"     //ADD THIS
+    }
+    repositories {
+        google()
+        mavenCentral()
+        jcenter()
+    }
+    dependencies {
+        classpath("com.android.tools.build:gradle")
+        classpath("com.facebook.react:react-native-gradle-plugin")
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin")
+        classpath("com.google.gms:google-services:4.4.0")
+    }   
+    
+}
+
+
+apply plugin: "com.facebook.react.rootproject"
+subprojects { subproject ->
+        if(project['name'] == 'react-native-read-sms'){
+            project.configurations { compile { } }
+        }
+         if(project['name'] == 'react-native-google-nearby-messages'){
+            project.configurations { compile { } }
+        }
+}

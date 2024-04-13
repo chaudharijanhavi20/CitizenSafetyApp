@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "788856126329",
+    "project_id": "citizensafetyapp-8efd9",
+    "storage_bucket": "citizensafetyapp-8efd9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:788856126329:android:db9a7b2480102175208da8",
+        "android_client_info": {
+          "package_name": "com.citizensafetyapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApvcyIPu_pajoC5S5K_tOqlVexyvWMUz0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
